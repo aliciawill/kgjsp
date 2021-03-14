@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<script type="text/javascript">
+function pay() {
+	//money, count입력값을 가지고 온다.
+	money =  document.getElementById('money').value
+	count =  document.getElementById('count').value
+	
+	//정수로 변환
+	money2 = parseInt(money)
+	count2 = parseInt(count)
+	
+	//총 결제금액 계산해준다.
+	sum = money2 * count2
+	
+	//소액결제라서 2만원 이하면 됨.
+	if (sum <= 20000) {
+		location.href = "http://www.naver.com"
+	} else {
+		alert('소액결재는 2만원까지만 가능합니다. 재입력해주세요.')
+	}
+	
+}
+</script>
+</head>
+<body>
+하나당 가격: <input type="number" id="money"><br>
+물건의 개수: <input type="number" id="count"><br>
+<button onclick="pay()">결제하기</button>
+</body>
+</html>

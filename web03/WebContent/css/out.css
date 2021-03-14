@@ -1,0 +1,86 @@
+@charset "UTF-8";
+td{
+	text-align: center;
+}
+#b {
+	font-size: 30px;
+	background: gold;
+	font-weight: bold;
+	width: 200px;	
+}
+
+body {
+	font-size: 20px;
+}
+
+input {
+	width: 300px;
+	background: fuchsia;
+	font-size: 20px;
+	color: white;
+	font-family: 궁서;
+}
+
+.left {
+	background: yellow;
+	width: 100px;
+	text-align: center;
+}
+
+.right {
+	width: 300px;
+	background: pink;
+}
+
+li {
+	list-style: none;
+	float: left;
+	padding: 10px;
+	font-size: 25px;
+	background: orange;
+	margin-top: 20px;
+	/* border-radius: 20px 0 0 20px; */
+}
+
+a:hover {
+	background: red;
+	text-decoration: none;
+}
+
+a {
+	background: white;
+	text-decoration: none;
+}
+
+li:nth-child(2n+1) {
+	background: yellow;
+}
+
+#total {
+	width: 800px;
+	height: 800px;
+	background: aqua;
+}
+
+#top {
+	width: 800px;
+	height: 100px;
+	background: lime;
+}
+
+#top2 {
+	width: 300px;
+	height: 100px;
+	background: black;
+	color: white;
+	top: 5px;
+	right: 5px;
+	position: fixed;
+	border-radius: 100px 0 100px 0;
+}
+
+#center {
+	width: 800px;
+	height: 500px;
+	background: url("../assets/img/portfolio/04-thumbnail.jpg");
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+//변수 타입을 선언하지 않음
+function site() {
+	siteValue = document.getElementById('site').value
+	
+	result = ""
+	if (siteValue == 'naver') {
+		result = "http://www.naver.com"
+	}else if (siteValue == 'daum') {
+		result = "http://www.daum.net"
+	}else if (siteValue == 'google') {
+		result = "http://www.google.com"
+	}else{
+		result = "index.html"
+	}
+	
+	location.href = result;	
+}	
+
+
+
+</script>
+</head>
+<body>
+<button onclick="history.go(-1)">이전페이지로</button><br>
+<button onclick="history.go(-2)">이이전페이지로</button><br>
+<hr>
+원하는 사이트명: <input id="site">
+<button onclick="site()">[원하는 사이트로 이동 버튼]</button>
+
+<!-- 원하는 사이트명: naver
+[원하는 사이트로 이동 버튼]
+
+site()
+naver이면 naver.com으로 이동
+daum이면 daum.net으로 이동
+google이면 google.com으로 이동 -->
+</div>
+</body>
+</html>

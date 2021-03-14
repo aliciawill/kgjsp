@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+//변수 타입을 선언하지 않음
+function add() {
+	//n1, n2입력한 값을 가지고 와야함.
+	//숫자로 변환해주어야 함.
+	n1Value = document.getElementById('n1').value
+	n2Value = document.getElementById('n2').value
+	
+	x = parseInt(n1Value)
+	y = parseInt(n2Value)
+	
+	alert(x + y + '=> 더하기 기능 처리 창임.')
+}	
+
+function login() {
+	//id/pw입력하는 값을 가지고 와야함.
+	idTag = document.getElementById('id')
+	pwTag = document.getElementById('pw')
+	idValue = idTag.value
+	pwValue = pwTag.value
+	//alert('입력한 id값은 ' + idValue)
+	//alert('입력한 pw값은 ' + pwValue)
+	id1 = 'root'
+	pw1 = '1234'
+	divTag = document.getElementById('div')
+	result = ''
+	if (idValue == id1 && pwValue == pw1) {
+		result = '로그인 성공'
+	} else {
+		result = '로그인 실패'
+	}
+	divTag.innerHTML =  "<font color=red>" + result + "</font>"
+}
+
+
+</script>
+</head>
+<body>
+<a href="page3.html">3page로</a>
+<hr>
+<button onclick="history.go(-1)">이전페이지로</button>
+<button onclick="history.go(1)">이후페이지로</button>
+숫자1 : <input id="n1" type="number"><br>
+숫자2 : <input id="n2" type="number"><br>
+<button onclick="add()">더하기 기능 처리</button>
+<hr>
+아이디: <input name="id" id="id" value="root"><br>
+패스워드: <input name="pw" id="pw"><br>
+<button onclick="login()">로그인 기능 처리</button>
+<hr color="red">
+<div id="div">
+
+</div>
+</body>
+</html>
